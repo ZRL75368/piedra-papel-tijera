@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: whitesmoke;
+    background-color: rgb(36, 7, 37);
+    font-family: "Geist", sans-serif;
+    font-weight: bold;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#texto-titulo{
+    font-size: 30px;
+    margin-top: 50px;
+    letter-spacing: 0.3px;
+    cursor:default;
+    animation: animacionTitulo 1.8s ease-out forwards;
+    text-align: center;
+}
+
+button{
+    border-radius: 35px;
+    border-color: #ffffff;
+    background-color: rgb(114, 36, 167);
+    color: #ffffff;
+    padding: 10px 30px;
+    font-weight: bold;
+    font-family: "Geist", sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#boton-jugar{
+    margin-top: 30px;
+    animation: animacionBoton 1.2s ease-out forwards;
+}
+
+button:hover{
+    background-color: rgb(71, 24, 103);
+    transform: translateY(2px);
+}
+
+footer{
+    font-size: 10px;
+    color: rgb(88, 33, 90);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.logo-img{
+    margin-top: 10px;
+    margin-bottom: -50px;
+    height: 200px;
+    width: 300px;
+    display: block;
+    transition: transform 0.3s ease;
+    animation: animacionLogo 1.5s ease-out forwards;
+}
+
+.logo-img:hover{
+    transform: translateY(2px);
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+#boton-piedra{
+    color:#ffffff;
+    background-color: rgb(197, 59, 199);
+    margin-top: 25px;
+    animation: animacionBoton 0.4s ease-out forwards;
+}
+
+#boton-papel{
+    color:#ffffff;
+    background-color: rgb(197, 59, 199);
+    margin-top: 15px;
+    animation: animacionBoton 0.8s ease-out forwards;
+}
+
+#boton-tijera{
+    color:#ffffff;
+    background-color: rgb(197, 59, 199);
+    margin-top: 15px;
+    animation: animacionBoton 1.2s ease-out forwards;
+}
+
+#titulo-selcciones{
+    margin-top: 25px;
+    animation: animacionTitulo 1.8s ease-out forwards;
+    text-align: center;
+}
+
+
+@media (max-width: 480px) {
+    body > div:first-of-type {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+@keyframes animacionTitulo {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes animacionLogo {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes animacionBoton {
+    from{
+        transform:scale(0);
+        opacity: 0;
+    }
+    to{
+        transform:scale(1);
+        opacity: 1;
+    }
+}
