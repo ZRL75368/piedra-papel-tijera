@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos\styles.css">
+    <link rel="icon" type="image/png" href="./src/icono.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./src/icono-apple.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,10 +15,25 @@
 </head>
 <body>
 
-    <p id="texto-titulo">Has sacado:</p>
-    <span id="span-tu-eleccion"></span>
+    <div class="contenedor-resultado">
+        <p id="texto-titulo">Has sacado:</p>
+        <span id="span-tu-eleccion"></span>
+    </div>
+
+    <div class="contenedor-resultado">  
+        <p id="texto-titulo">Y tu rival:</p>
+        <span id="span-eleccion-rival"></span>
+    </div>
+        <br>
+    <div>
+        <span id="resultado-final"></span>
+    </div>
+
+    <div>
+        <button id="volver-a-jugar">Otra ronda</button>
+    </div>
     
-    <script src="scripts\juego.js"></script>
+    <script type="module" src="scripts/juego.js"></script>
 </body>
 
 <footer>
